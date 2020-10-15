@@ -1,0 +1,30 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-notifications/lib/notifications.css';
+import App from './scenes/App';
+// import * as serviceWorker from './serviceWorker';
+import { Provider } from 'react-redux';
+// import { ConnectedRouter } from 'react-router-redux';
+// Import {history} and store
+import { store, history } from './store';
+import { Router } from 'react-router-dom';
+import { NotificationContainer } from 'react-notifications';
+// const target = document.querySelector('#root');
+
+ReactDOM.render(
+  <Provider store={store}>
+    <Router history={history}>
+      <App />
+    </Router>
+    <NotificationContainer />
+  </Provider>
+  ,
+  document.getElementById('root')
+);
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+// serviceWorker.unregister();

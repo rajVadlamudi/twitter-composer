@@ -1,0 +1,25 @@
+.top-navbar .action-area {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.top-navbar .dropdown-toggle img,
+.top-navbar .dropdown-item img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.top-navbar .dropdown-toggle::after {
+    display: none;
+}
+
+.top-navbar .dropdown-menu {
+    width: 100px;
+}
+
+.top-navbar .dropdown-toggle .avatar {
+    width: 40px;
+    border-radius: 50%;
+    margin: 0px;
+}
