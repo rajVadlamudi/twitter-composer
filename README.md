@@ -1,4 +1,10 @@
+## Twitter-composer app - created with React and Vanilla javascript
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+- Home page (displays welcome message and features of the app)
+
+- Messages page (users can create or edit messages and also displays list of added messages) 
 
 ## Available Scripts
 
